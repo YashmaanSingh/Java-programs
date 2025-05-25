@@ -13,6 +13,7 @@
             } else {
                 System.out.println(number + " is odd.");
             }
+            scanner.close();
         }
     }
     
