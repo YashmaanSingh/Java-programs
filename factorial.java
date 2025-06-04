@@ -1,23 +1,21 @@
-
 import java.util.Scanner;
 
-
-
-public class factorial {
+public class Factorial {
     public static void main(String[] args) {
-        Scanner sc =  new Scanner(System.in);
-         System.out.println("Enter the factorial number:");
-         int a = sc.nextInt();
-         int fac=1;
-         for(int i = 1; i <=a; i++){
-               fac*=i;   
-         }
-         System.out.println(fac);
-
-        sc.close();
-    }
-
-
-
         
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+
+        long factorial = 1;
+        
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+
+        System.out.println("Factorial of " + num + " is: " + factorial);
+
+        scanner.close();
+    }
 }
